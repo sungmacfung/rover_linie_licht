@@ -30,6 +30,8 @@ input.onButtonPressed(Button.A, function () {
         `)
 })
 function DatenSenden () {
+    // Damit kann man in der Konsole die Werte anschauen, wenn das USB KAbel am PC eingesteckt ist
+    // 
     serial.writeValue("Lighttrackingsensor:", Rover.LightTracing())
 }
 input.onGesture(Gesture.LogoDown, function () {
